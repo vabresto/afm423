@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1611886428791.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "892BA35D",
+    "lastKnownWriteTime" : 0,
+    "last_content_update" : 1611886428791,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "id" : "8a986e8f9e7c4f218e1c1f5383d50de2",
+        "name" : "fit1",
+        "title" : "fit1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "object_explorer"
+}
