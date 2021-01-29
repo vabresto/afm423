@@ -23,6 +23,7 @@ tinytex::install_tinytex()
 source ~/.profile
 ```
 
+
 * Produce a PDF by running the following in the *terminal*:
 
 ```

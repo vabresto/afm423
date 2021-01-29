@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1611901125930.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "9BB69459",
+    "lastKnownWriteTime" : 1611901178,
+    "last_content_update" : 1611901178551,
+    "path" : "~/a1/a1.md",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "49,83",
+        "scrollLine" : "35"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "markdown"
+}

@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1611900877673.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "D0CCF5FE",
+    "lastKnownWriteTime" : 1611901089,
+    "last_content_update" : 1611901089024,
+    "path" : "~/a1/q5/q5.R",
+    "project_path" : "q5.R",
+    "properties" : {
+        "cursorPosition" : "20,47",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

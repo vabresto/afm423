@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1611901353347.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "3FFCC23B",
+    "lastKnownWriteTime" : 1611901941,
+    "last_content_update" : 1611901941460,
+    "path" : "~/readme.md",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "29,184",
+        "scrollLine" : "12"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "markdown"
+}
