@@ -1,29 +1,3 @@
-#rmse = function(actual, predicted) {
-#  sqrt(mean((actual - predicted) ^ 2))
-#}
-
-#get_complexity = function(model) {
-#  length(coef(model)) - 1
-#}
-
-#h1q3_test <- read.csv("h1q3-test-data.csv")
-
-#x_test = h1q3_test["x"]
-#y_test = h1q3_test["y"]
-
-#h1q3_train <- read.csv("h1q3-train-data.csv")
-
-#x_train = h1q3_train["x"]
-#y_train = h1q3_train["y"]
-
-# seq from 5 -> 50, step = 5
-# k = seq(5, 50, by = 5)
-
-#pred = FNN::knn.reg(train=x_train, test=x_test, y=y_train, k=5)
-
-#rmse(y_test, pred)
-
-
 rmse = function(actual, predicted) {
   sqrt(mean((actual - predicted) ^ 2))
 }
@@ -31,7 +5,13 @@ rmse = function(actual, predicted) {
 h1q3_test <- read.csv("h1q3-test-data.csv")
 h1q3_train <- read.csv("h1q3-train-data.csv")
 
-
-pred = FNN::knn.reg(train = h1q3_train["x"], test = h1q3_test["x"], y = h1q3_train$y, k = 5)$pred
-
-rmse(predicted = pred, actual = h1q3_test$y)
+for (k in seq(5, 50, by=5)) {
+  cat("k:", k, "\t")
+  pred_train = FNN::knn.reg(train = h1q3_train["x"], test = h1q3_test["x"], y = h1q3_train$y, k = k)$pred
+  train_rmse = rmse(predicted = pred_train, actual = h1q3_test$y)
+  
+  pred_test = FNN::knn.reg(train = h1q3_train["x"], test = h1q3_train["x"], y = h1q3_train$y, k = k)$pred
+  test_rmse = rmse(predicted = pred_test, actual = h1q3_test$y)
+  
+  cat("train rmse:", train_rmse, "\ttest rmse:", test_rmse, "\n")
+}

@@ -10,10 +10,6 @@ get_rmse = function(model, data, response) {
        predicted = predict(model, data))
 }
 
-get_complexity = function(model) {
-  length(coef(model)) - 1
-}
-
 auto = Auto[, !names(Auto) %in% c("name")]
 set.seed(42)
 auto_idx = sample(1:nrow(auto), size = round(0.5 * nrow(auto)))
@@ -27,9 +23,6 @@ get_rmse(model, data=test_data, response="mpg")
 train_index = sample(1:nrow(auto), size=round(0.5*nrow(auto)))
 train_data = auto[train_index,]
 test_data = auto[-train_index,]
-
-#h1q5_test <- read.csv("h1q3-test-data.csv")
-#h1q5_train <- read.csv("h1q3-train-data.csv")
 
 pred = FNN::knn.reg(train = scale(train_data[, -1]), test = scale(test_data[, -1]), y = train_data$y, k = 6)$pred
 rmse(predicted = pred, actual = test_data$y)

@@ -25,15 +25,18 @@ train_boston = Boston[boston_index, ]
 test_boston = Boston[-boston_index, ]
 
 fit = lm(medv ~ .^2, data = train_boston)
-
 fit_smaller = lm(medv ~ ., data = train_boston)
-#fit_larger = lm(medv ~ .^2 + I(lstatˆ2) + I(blackˆ2) + I(ptratioˆ2) + I(tax^2) + I(rad) + I(rad^2) + I(dis^2) + I(age^2) + I(rm^2) + I(nox^2) + I(chas^2) + I(indus^2) + I(zn^2) + I(crim^2), data=train_boston)
 fit_larger = lm(medv ~ .^2 + I(black^2), data=train_boston)
+
+get_rmse(fit, data=train_boston, response="medv")
+get_rmse(fit_smaller, data=train_boston, response="medv")
+get_rmse(fit_larger, data=train_boston, response="medv")
+
+get_rmse(fit, data=test_boston, response="medv")
+get_rmse(fit_smaller, data=test_boston, response="medv")
+get_rmse(fit_larger, data=test_boston, response="medv")
 
 get_complexity(fit)
 get_complexity(fit_smaller)
 get_complexity(fit_larger)
 
-get_rmse(fit, data=test_boston, response="medv")
-get_rmse(fit_smaller, data=test_boston, response="medv")
-get_rmse(fit_larger, data=test_boston, response="medv")

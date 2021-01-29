@@ -1,0 +1,9 @@
+## Q5
+
+A KNN model that outperforms the given linear model can be constructed as follows: 
+```R
+model = FNN::knn.reg(train = scale(train_data[, -1]), test = scale(train_data[, -1]), y = train_data$y, k = 6)
+```
+
+This model uses scaled X data and a `k` value of 6. It has a test RSME of `1.182593` which is significantly lower than the
+linear model, which had a test RSME of `3.495659`.

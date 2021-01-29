@@ -1,0 +1,10 @@
+## Q1
+
+| Model | Train RMSE | Test RMSE | Num Parameters |
+| --- | --- | --- | --- |
+| 1 | 1.44834 | 1.424781 | 4 |
+| 2 | 1.159677 | 1.11978 | 7 |
+| 3 | 0.5070891 | 0.5269903 | 13 |
+| 4 | 0.5044712 | 0.5332113 | 18 |
+
+Model 3 is best at making predictions because it has the smallest Test RMSE.

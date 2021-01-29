@@ -2,25 +2,17 @@ mse = function(actual, predicted) {
   mean((actual - predicted) ^ 2)
 }
 
-# do for k = 1, 5, 25
-
 h1q4_test <- read.csv("h1q4-test-data.csv")
 h1q4_train <- read.csv("h1q4-train-data.csv")
 
-pred = FNN::knn.reg(train = scale(h1q4_train[, -1]), test = scale(h1q4_test[, -1]), y = h1q4_train$y, k = 5)$pred
-mse(predicted = pred, actual = h1q4_test$y)
-
-predTrain = FNN::knn.reg(train = h1q4_train[, -1], test = h1q4_train[, -1], y = h1q4_train$y, k = 5)$pred
-mse(predicted = predTrain, actual = h1q4_train$y)
-
-#> h1q4_test
-#y           x1            x2            x3           x4
-#1   -0.703454083 -0.804030087  5.863331e-03 -0.0779760220  -9.76293562
-
-#> h1q4_test[,-4]
-#y           x1            x2           x4
-#1   -0.703454083 -0.804030087  5.863331e-03  -9.76293562
-
-#> h1q4_test[,-1]
-#x1            x2            x3           x4
-#1   -0.804030087  5.863331e-03 -0.0779760220  -9.76293562
+# do for k = 1, 5, 25
+for (k in list(1, 5, 25)) {
+  predTest = FNN::knn.reg(train = h1q4_train[, -1], test = h1q4_test[, -1], y = h1q4_train$y, k = k)$pred
+  test_mse = mse(predicted = predTest, actual = h1q4_test$y)
+  
+  predScaled = FNN::knn.reg(train = scale(h1q4_train[, -1]), test = scale(h1q4_test[, -1]), y = h1q4_train$y, k = k)$pred
+  scaled_test_mse = mse(predicted = predScaled, actual = h1q4_test$y)
+  
+  cat("k:", k)
+  cat("\ttest mse:", test_mse, "\tscaled test mse:", scaled_test_mse, "\n")
+}

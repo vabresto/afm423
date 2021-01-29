@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2916038007",
+    "hash" : "0",
     "id" : "5ED378A8",
-    "lastKnownWriteTime" : 1611890934,
-    "last_content_update" : 1611890934157,
+    "lastKnownWriteTime" : 1611894547,
+    "last_content_update" : 1611894547706,
     "path" : "~/a1/q5/q5.R",
     "project_path" : "q5.R",
     "properties" : {
-        "cursorPosition" : "31,46",
-        "scrollLine" : "9"
+        "cursorPosition" : "21,0",
+        "scrollLine" : "1"
     },
     "read_only" : false,
     "read_only_alternatives" : [
