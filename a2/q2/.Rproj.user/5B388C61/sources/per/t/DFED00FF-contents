@@ -1,0 +1,14 @@
+## Q2
+
+| Model | Train/Test | Error |
+| --- | --- | --- |
+| 1 | Train | 0.334 |
+| 1 | Test | 0.3305 |
+| 2 | Train | 0.334 |
+| 2 | Test | 0.3305 |
+| 3 | Train | 0.32 |
+| 3 | Test | 0.35 |
+| 4 | Train | 0.08 |
+| 4 | Test | 0.111 |
+
+Model 4 is best at making predictions because it has the smallest test error.
