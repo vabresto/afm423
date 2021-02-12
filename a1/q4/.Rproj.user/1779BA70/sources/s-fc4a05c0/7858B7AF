@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1611902859240.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "7858B7AF",
+    "lastKnownWriteTime" : 1,
+    "last_content_update" : 1611902859240,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "CD9D2C96",
+        "caption" : "h1q4_test",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=h1q4_test&cache_key=CD9D2C96",
+        "displayedObservations" : 850,
+        "environment" : "",
+        "expression" : "h1q4_test",
+        "object" : "h1q4_test",
+        "preview" : 0,
+        "totalObservations" : 850,
+        "variables" : 5
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
