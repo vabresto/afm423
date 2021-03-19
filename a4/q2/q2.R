@@ -62,3 +62,8 @@ calc_rmse(hit_tst$Salary, predicted = predict(rf_oob, newdata = hit_tst))
 bt_oob$bestTune
 bt_oob$results
 calc_rmse(hit_tst$Salary, predicted = predict(bt_oob, newdata = hit_tst))
+
+# Q5
+plot(gb_cv)
+varImpPlot(rf_oob$finalModel)
+varImpPlot(bt_oob$finalModel)
